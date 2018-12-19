@@ -1,0 +1,561 @@
+/*
+* @Author: SONLY
+* @Date:   2018-12-18 10:08:31
+* @Last Modified by:   sonlyjiang
+* @Last Modified time: 2018-12-19 16:19:33
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body,.only{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffee;
+	font-family: "微软雅黑";
+	overflow: hidden;
+}
+.only{
+	position: relative;
+	
+}
+.onlybot{
+	position: absolute;
+	bottom: 0px;
+	height: 7px;
+	left: 50%;
+	width: 0px;
+	background: #231f20;
+	transition: 3s;
+}
+.onlybota{
+	width: 80%;
+	left: 10%;
+}
+.btn{
+	/* display: none; */
+	width: 100px;
+	/* height: 110px; */
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	margin-left: -70px;
+	margin-top: -90px;
+	text-align: center;
+	color: #be1a25;
+	line-height: 30px;
+	font-size: 16px;
+	padding: 0px 20px;
+	border-bottom: 2px solid #be1a25;
+	transition: 3s;
+	cursor: pointer;
+}
+.btn1{
+	transform: translate(0, 500px)
+}
+.only_p{
+	margin-top: 10px;
+}
+.only_hide{
+	display: none;
+}
+.only_show{
+	display: block;
+}
+.only_tree{
+	display: none;
+	cursor: pointer;
+}
+.heart{
+    width: 20px;
+    height: 34px;
+    /* margin: 20px auto; */
+    position: relative;
+}
+.only_heart{
+	width: 99px;
+	height: 110px;
+	position: relative;
+	transition: 2s;
+	animation: 2s bianda linear infinite;
+}
+@keyframes bianda{
+	0%,100%{
+		transform: scale(0.8, 0.8);
+	}
+	50%{
+		transform: scale(1.1, 1.1);
+
+	}
+}
+.only_circle{
+	transition: 1s;
+}
+.only_circle1{
+	width: 20px;
+	height: 20px;
+	margin-left: 40px;
+	border-radius: 50%;
+	/* background-color: #7f3e30; */
+	background-color: #be1a25;
+}
+
+.only_heart::before,.only_heart::after,.heart::before,.heart::after{
+    position: absolute;
+
+    display: block;
+    content:"";
+    width: 20px;
+    height: 34px;
+    background-color: #fe310b;
+    border-top-left-radius: 50% 10px;
+    border-top-right-radius: 50% 10px;
+    left: 0px;
+    top: 0px;
+    transform: rotate(-45deg);
+}
+.only_heart::before,.only_heart::after{
+	width: 66px;
+	height: 110px;
+	border-top-left-radius: 50% 33px;
+    border-top-right-radius: 50% 33px;
+    background-color: #be1a25;
+}
+.only_heart::after{
+	transform: rotate(45deg);
+    left: 32px;
+}
+.heart::after{
+    transform: rotate(45deg);
+    left: 10px;
+
+}
+.heart1::before,.heart1::after{
+	background-color: #ff8118;
+}
+.heart2::before,.heart2::after{
+	background-color: #ff87b3;
+}
+.heart3::before,.heart3::after{
+	background-color: #ff4de3;
+}
+.heart4::before,.heart4::after{
+	background-color: #ffe504;
+}
+.heart5::before,.heart5::after{
+	background-color: #ff112c;
+	/* background: linear-gradient(to #fff, #ff112c , blue); */
+}
+.heart6::before,.heart6::after{
+	background-color: #ffecd2;
+}
+.heart7::before,.heart7::after{
+	background-color: #ff897e;
+	opacity: 0.8;
+}
+
+
+.tree{
+	/* width: 100px; */
+	/* background: pink; */
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+}
+.tree_gan{
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+	text-align: center;
+}
+.tree_gan i{
+	font-size: 12px;
+	color: #b6c310;
+	transition: 2s
+}
+.tree_gan1{
+	bottom: -15px;
+}
+.tree_gan1 i{
+	font-size: 200px;
+}
+.tree_gan2 i{
+	color: #7f3e30;
+}
+.only_tree{
+	/* display: block; */
+	width: 334px;
+	height: 300px;
+	/* background: pink; */
+	bottom: 100px;
+	z-index: 5;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	animation: 1s bian linear;
+}
+@keyframes bian{
+	0%{
+		transform: scale(0.1,0.1)
+	}
+	100%{
+		transform: scale(1,1)
+	}
+}
+.heart{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	opacity: 1;
+	transform: translate(0px,0px) scale(0.1, 0.1) rotate(0deg);
+	transition: 2s;
+}
+
+.hearta{
+	opacity: 0.9;
+	z-index: 2;
+}
+
+.heart11{
+	transform: rotate(-45deg) scale(1, 1);
+	transition: 2s;
+}
+.heart22,.heart55{
+	transform: rotate(25deg) scale(1, 1);
+	transition: 2s;
+}
+.heart33{
+	transform: rotate(80deg) scale(1, 1);
+	transition: 2s;
+}
+.heart44{
+	transform: rotate(45deg) scale(1, 1);
+	transition: 2s;
+}
+.heart66{
+	transform: rotate(180deg) scale(1, 1);
+	transition: 2s;
+}
+.heart77{
+	transform: rotate(0deg) scale(1, 1);
+	transition: 2s;
+}
+.heartb{
+	animation: 5s go linear infinite;
+	transform: translate(0px,0px) scale(1, 1) rotate(0deg);
+}
+.heartc{
+	animation: 9s go linear infinite;
+	transform: translate(0px,0px) scale(1, 1) rotate(0deg);
+}
+.heartd{
+	animation: 12s go linear infinite;
+	transform: translate(0px,0px) scale(1, 1) rotate(0deg);
+}
+.hearte{
+	animation: 15s go linear infinite;
+	transform: translate(0px,0px) scale(1, 1) rotate(0deg);
+}
+@keyframes go{
+	0%{
+		transform: translate(0px,0px) scale(1, 1) rotate(0deg);
+	}
+	50%{
+		transform: translate(-50px, 150px) rotate(150deg) scale(0.8, 0.8);
+	}
+	100%{
+		transform: translate(-100px, 500px) rotate(0deg) scale(0.1, 0.1);
+	}
+}
+.heartshow{
+	opacity: 0;
+	transform: translate(0px, 0px) scale(0.1, 0.1);
+}
+
+.heart11{
+	margin-bottom: 15px;
+	margin-left: -15px;
+}
+.heart12{
+	margin-left: 0px;
+	margin-bottom: 15px;
+}
+.heart13{
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+.heart14{
+	margin-left: 30px;
+	margin-bottom: 45px;
+}
+.heart15{
+	margin-left: 45px;
+	margin-bottom: 60px;
+}
+.heart16{
+	margin-left: 60px;
+	margin-bottom: 75px;
+}
+.heart17{
+	margin-left: 75px;
+	margin-bottom: 90px;
+}
+.heart18{
+	margin-left: 80px;
+	margin-bottom: 105px;
+}
+.heart19{
+	margin-left: 85px;
+	margin-bottom: 120px;
+}
+.hearta11{
+	margin-left: -30px;
+
+}
+.hearta12{
+	margin-left: -45px;
+	margin-bottom: 15px;
+}
+.hearta13{
+	margin-left: -60px;
+	margin-bottom: 30px;
+}
+.hearta14{
+	margin-left: -93px;
+	margin-bottom: 45px;
+}
+.hearta15{
+	margin-left: -90px;
+	margin-bottom: 60px;
+}
+.hearta16{
+	margin-left: -116px;
+	margin-bottom: 75px;
+}
+.hearta17{
+	margin-left: -120px;
+	margin-bottom: 90px;
+}
+.hearta18{
+	margin-left: -135px;
+	margin-bottom: 105px;
+}
+.hearta19{
+	margin-left: -142px;
+	margin-bottom: 120px;
+}
+.hearta21{
+	margin-left: -130px;
+	margin-bottom: 130px;
+}
+.hearta22{
+	margin-left: -113px;
+	margin-bottom: 154px;
+}
+.hearta23{
+	margin-left: -90px;
+	margin-bottom: 163px;
+}
+.hearta24{
+	margin-left: -70px;
+	margin-bottom: 150px;
+}
+.hearta25{
+	margin-left: -50px;
+	margin-bottom: 135px;
+}
+.hearta26{
+	margin-left: -30px;
+	margin-bottom: 120px;
+}
+.hearta27{
+	margin-left: -15px;
+	margin-bottom: 135px;
+}
+.hearta28{
+	margin-left: 5px;
+	margin-bottom: 150px;
+}
+.hearta29{
+	margin-left: 25px;
+	margin-bottom: 165px;
+}
+.hearta31{
+	margin-left: 55px;
+	margin-bottom: 155px;
+}
+.hearta32{
+	margin-left: 80px;
+	margin-bottom: 135px;
+}
+
+/* zj */
+.hearta33{
+	margin-left: 10px;
+	margin-bottom: 50px;
+}
+.hearta34{
+	margin-left: 30px;
+	margin-bottom: 135px;
+}
+.hearta35{
+	margin-left: 10px;
+	margin-bottom: 70px;
+}
+.hearta36{
+	margin-left:-30px;
+	margin-bottom: 70px;
+}
+.hearta37{
+	margin-left: -60px;
+	margin-bottom: 70px;
+}
+.hearta38{
+	margin-left:-30px;
+	margin-bottom: 100px;
+}
+.hearta39{
+	margin-left: -90px;
+	margin-bottom: 100px;
+}
+.hearta41{
+	margin-left:-90px;
+	margin-bottom: 120px;
+}
+.hearta42{
+	margin-left: -50px;
+	margin-bottom: 80px;
+}
+.hearta43{
+	margin-left:-50px;
+	margin-bottom: 110px;
+}
+.hearta44{
+	margin-left: -20px;
+	margin-bottom: 30px;
+}
+.hearta45{
+	margin-left:-50px;
+	margin-bottom: 40px;
+}
+.hearta46{
+	margin-left: 20px;
+	margin-bottom: 80px;
+}
+.hearta47{
+	margin-left:50px;
+	margin-bottom: 80px;
+}
+.hearta48{
+	margin-left: 20px;
+	margin-bottom: 100px;
+}
+.hearta49{
+	margin-left:50px;
+	margin-bottom: 100px;
+}
+.hearta51{
+	margin-left: 50px;
+	margin-bottom: 120px;
+}
+.hearta52{
+	margin-left:10px;
+	margin-bottom: 120px;
+}
+.love{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	
+	
+	top: 20%;
+	left: 50%;
+	margin-left: -50px;
+	color: #c0ce16;
+	cursor: pointer;
+	text-align: center;
+	display: none;
+}
+.love i{
+	font-size: 60px;
+	color: #c0ce16;
+	border-radius: 50%;
+	padding: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	box-shadow: 0px 0px 15px 1px #bbb;
+	animation: 2s boxs linear infinite;
+	transition: 1s;
+}
+@keyframes boxs{
+	0%,100%{
+		padding: 10px;
+		padding-top: 5px;
+		padding-right: 5px;
+		box-shadow: 0px 0px 15px 3px #bbb;
+		transform: rotate(0deg);
+	}
+	50%{
+		padding: 15px;
+		padding-top: 10px;
+		padding-right: 10px;
+		box-shadow: 0px 0px 25px 10px #bbb;
+		transform: rotate(360deg);
+	}
+}
+@keyframes boxsa{
+	0%,100%{
+		padding: 10px;
+		padding-top: 5px;
+		padding-right: 5px;
+		box-shadow: 0px 0px 0px 0px #bbb;
+		transform: rotate(0deg);
+	}
+	
+}
+.shuidiv{
+	transition: 1s;
+}
+.love .shu{
+	box-shadow: 0px 0px 0px 0px #bbb;
+	animation: 2s boxsa linear infinite;
+}
+.water{
+	position: absolute;
+	top: 30%;
+	width: 100px;
+	height: 200px;
+	left: 50%;
+	margin-left: -50px;
+	/* background: pink; */
+	color: transparent;
+	transition: 3s;
+}
+.watertop{
+	top: 100%;
+	color: #1fc8fe;
+}
+
+.water i{
+	font-size: 18px;
+	position: relative;
+	top: 5%;
+}
+.water .water1{
+	left: 15%;
+}
+.water .water2{
+	font-size: 20px;
+	top: 50%;
+}
+.water .water3{
+	font-size: 23px;
+	top: 30%;
+}
+.water .water4{
+	font-size: 14px;
+	top: 15%;
+}
